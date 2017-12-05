@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+# works once committed locally - but later not after rebase - index not refreshed?
+          #uri: /root/git/ConfigData
+          uri: https://github.com/AdrianStraetling/ConfigData
+server: 
+  port: 8001
