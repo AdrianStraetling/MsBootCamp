@@ -17,7 +17,6 @@ public class Team {
 	Long id;
 	String name;
 	String location;
-	String mascot;
 
 	@OneToMany(cascade = CascadeType.ALL)
 	@JoinColumn(name = "teamId")
@@ -56,11 +55,4 @@ public class Team {
 		this.location = location;
 	}
 
-	public String getMascot() {
-		return mascot;
-	}
-
-	public void setMascot(String mascot) {
-		this.mascot = mascot;
-	}
 }
